@@ -1,6 +1,6 @@
-﻿namespace MyFirstWinFormsProject
+namespace MyFirstWinFormsProject
 {
-    partial class MyTicTacSoutoion
+    partial class HisTicTac
     {
         /// <summary>
         /// Required designer variable.
@@ -132,8 +132,8 @@
             this.pb_BottomRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_BottomRight.TabIndex = 9;
             this.pb_BottomRight.TabStop = false;
-            this.pb_BottomRight.Tag = "9";
-            this.pb_BottomRight.Click += new System.EventHandler(this.game_Click);
+            this.pb_BottomRight.Tag = "?";
+            this.pb_BottomRight.Click += new System.EventHandler(this.OnClick);
             // 
             // pb_BottomMid
             // 
@@ -145,8 +145,8 @@
             this.pb_BottomMid.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_BottomMid.TabIndex = 8;
             this.pb_BottomMid.TabStop = false;
-            this.pb_BottomMid.Tag = "8";
-            this.pb_BottomMid.Click += new System.EventHandler(this.game_Click);
+            this.pb_BottomMid.Tag = "?";
+            this.pb_BottomMid.Click += new System.EventHandler(this.OnClick);
             // 
             // pb_MidRight
             // 
@@ -158,8 +158,8 @@
             this.pb_MidRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_MidRight.TabIndex = 7;
             this.pb_MidRight.TabStop = false;
-            this.pb_MidRight.Tag = "6";
-            this.pb_MidRight.Click += new System.EventHandler(this.game_Click);
+            this.pb_MidRight.Tag = "?";
+            this.pb_MidRight.Click += new System.EventHandler(this.OnClick);
             // 
             // pb_MidMid
             // 
@@ -171,8 +171,8 @@
             this.pb_MidMid.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_MidMid.TabIndex = 6;
             this.pb_MidMid.TabStop = false;
-            this.pb_MidMid.Tag = "5";
-            this.pb_MidMid.Click += new System.EventHandler(this.game_Click);
+            this.pb_MidMid.Tag = "?";
+            this.pb_MidMid.Click += new System.EventHandler(this.OnClick);
             // 
             // pb_TopRight
             // 
@@ -184,8 +184,8 @@
             this.pb_TopRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_TopRight.TabIndex = 5;
             this.pb_TopRight.TabStop = false;
-            this.pb_TopRight.Tag = "3";
-            this.pb_TopRight.Click += new System.EventHandler(this.game_Click);
+            this.pb_TopRight.Tag = "?";
+            this.pb_TopRight.Click += new System.EventHandler(this.OnClick);
             // 
             // pb_TopMid
             // 
@@ -197,8 +197,8 @@
             this.pb_TopMid.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_TopMid.TabIndex = 4;
             this.pb_TopMid.TabStop = false;
-            this.pb_TopMid.Tag = "2";
-            this.pb_TopMid.Click += new System.EventHandler(this.game_Click);
+            this.pb_TopMid.Tag = "?";
+            this.pb_TopMid.Click += new System.EventHandler(this.OnClick);
             // 
             // pb_BottomLeft
             // 
@@ -210,8 +210,8 @@
             this.pb_BottomLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_BottomLeft.TabIndex = 3;
             this.pb_BottomLeft.TabStop = false;
-            this.pb_BottomLeft.Tag = "7";
-            this.pb_BottomLeft.Click += new System.EventHandler(this.game_Click);
+            this.pb_BottomLeft.Tag = "?";
+            this.pb_BottomLeft.Click += new System.EventHandler(this.OnClick);
             // 
             // pb_MidLeft
             // 
@@ -223,8 +223,8 @@
             this.pb_MidLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_MidLeft.TabIndex = 2;
             this.pb_MidLeft.TabStop = false;
-            this.pb_MidLeft.Tag = "4";
-            this.pb_MidLeft.Click += new System.EventHandler(this.game_Click);
+            this.pb_MidLeft.Tag = "?";
+            this.pb_MidLeft.Click += new System.EventHandler(this.OnClick);
             // 
             // pb_TopLeft
             // 
@@ -236,10 +236,10 @@
             this.pb_TopLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_TopLeft.TabIndex = 1;
             this.pb_TopLeft.TabStop = false;
-            this.pb_TopLeft.Tag = "1";
-            this.pb_TopLeft.Click += new System.EventHandler(this.game_Click);
+            this.pb_TopLeft.Tag = "?";
+            this.pb_TopLeft.Click += new System.EventHandler(this.OnClick);
             // 
-            // MyTicTacSoutoion
+            // HisTicTac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -260,9 +260,9 @@
             this.Controls.Add(this.pb_MidLeft);
             this.Controls.Add(this.pb_TopLeft);
             this.Controls.Add(this.label1);
-            this.Name = "MyTicTacSoutoion";
+            this.Name = "HisTicTac";
             this.Text = "Tic-Tac-Toe Game";
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form3_Paint);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form4_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.pb_BottomRight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_BottomMid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_MidRight)).EndInit();
@@ -294,5 +294,6 @@
         private System.Windows.Forms.Button btnRestartGame;
         private System.Windows.Forms.Label lbl_Player;
         private System.Windows.Forms.Label lblWinner;
+
     }
 }
